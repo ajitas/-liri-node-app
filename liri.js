@@ -5,7 +5,7 @@ var Spotify = require("node-spotify-api");
 var moment = require("moment");
 var fs = require("fs");
 var inquirer = require("inquirer");
-
+var logFile = "log.txt";
 
 function moreQuestions(){
     inquirer.prompt([{
@@ -20,6 +20,14 @@ function moreQuestions(){
         }
     });
 }
+
+function log(category,name){
+    fs.appendFile(logFile,category+ ",\""+ name+"\"\n", function(error){
+        if(error)
+            console.log(error);
+    });
+}
+
 function initializeApp(){
     inquirer.prompt([{
         type:"list",
@@ -38,7 +46,6 @@ function initializeApp(){
                                             callSpotifyAPI(response.name);
                                         else
                                             callSpotifyAPI("The Sign");
-
                                     });
                                     break;
         case "movie-this":
@@ -51,7 +58,6 @@ function initializeApp(){
                                         callOMDBAPI(response.name);
                                         else
                                         callOMDBAPI("Mr.Nobody");
-
                                         
                                     });
                                     break;
@@ -63,7 +69,6 @@ function initializeApp(){
                                     }]).then(function(response){
                                         if(response.name)
                                             callBandsInTownAPI(response.name);
-
                                         
                                     });
                                     break;
@@ -89,6 +94,7 @@ function callSpotifyAPI(songName){
         console.log("Preview Link:",data.tracks.items[0].preview_url)
         console.log("Album Name:",data.tracks.items[0].album.name);
 
+        log("spotify-this-song",songName);
         moreQuestions();
       });
       
@@ -96,16 +102,16 @@ function callSpotifyAPI(songName){
 
 function callOMDBAPI(movieName){
     var movieWords = movieName.split(' ');
-    var movieName = "";
+    var strMovieName = "";
     for (var i = 0; i < movieWords.length; i++) {
       if (i > 0 && i < movieWords.length) {
-        movieName = movieName + "+" + movieWords[i];
+        strMovieName = strMovieName + "+" + movieWords[i];
       }
       else {
-        movieName += movieWords[i];
+        strMovieName += movieWords[i];
       }
     }
-    var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+    var queryUrl = "http://www.omdbapi.com/?t=" + strMovieName + "&y=&plot=short&apikey=trilogy";
 
     request(queryUrl, function(error, response, body) {
 
@@ -128,6 +134,7 @@ function callOMDBAPI(movieName){
             console.log("Plot: ",JSON.parse(body).Plot)
             console.log("Actors: ",JSON.parse(body).Actors)
         }
+        log("movie-this",movieName);
         moreQuestions();
     });
     
@@ -145,6 +152,7 @@ function callBandsInTownAPI(artistName){
             console.log("Date of concert: ", moment(JSON.parse(body)[i].datetime).format("MM/DD/YY"));
         }
     }
+    log("concert-this",artistName);
     moreQuestions();
     });
     
