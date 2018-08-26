@@ -7,6 +7,7 @@ var fs = require("fs");
 var inquirer = require("inquirer");
 var logFile = "log.txt";
 
+//Ask the user if he wants to ask more questions
 function moreQuestions(){
     inquirer.prompt([{
         type:"confirm",
@@ -21,8 +22,8 @@ function moreQuestions(){
     });
 }
 
-function log(category,name){
-    fs.appendFile(logFile,category+ ",\""+ name+"\"\n", function(error){
+function log(category,name,resultString){
+    fs.appendFile(logFile,category+ ",\""+ name+"\"\n"+ resultString+"\n\n", function(error){
         if(error)
             console.log(error);
     });
@@ -80,6 +81,7 @@ function initializeApp(){
     });
 }
 function callSpotifyAPI(songName){
+    var resultString="";
     var spotify = new Spotify(keys.spotify);
     spotify.search({ type: 'track', query: songName }, function(err, data) {
         if (err) {
@@ -87,14 +89,22 @@ function callSpotifyAPI(songName){
         }
         //console.log(data.tracks)
         console.log("Artist(s):")
+        resultString= "Artist(s):\n";
+
         for(var i = 0; i< data.tracks.items[0].album.artists.length;i++){
-            console.log(i+1+": "+data.tracks.items[0].album.artists[i].name); 
+            console.log(i+1+": "+data.tracks.items[0].album.artists[i].name);
+            resultString+= i+1+": "+data.tracks.items[0].album.artists[i].name+"\n";
         }
         console.log("Song Name:",data.tracks.items[0].name);
-        console.log("Preview Link:",data.tracks.items[0].preview_url)
-        console.log("Album Name:",data.tracks.items[0].album.name);
+        resultString+= "Song Name:"+data.tracks.items[0].name+"\n";
 
-        log("spotify-this-song",songName);
+        console.log("Preview Link:",data.tracks.items[0].preview_url)
+        resultString+= "Preview Link:"+data.tracks.items[0].preview_url+"\n";
+
+        console.log("Album Name:",data.tracks.items[0].album.name);
+        resultString+= "Album Name:"+data.tracks.items[0].album.name+"\n";
+
+        log("spotify-this-song",songName,resultString);
         moreQuestions();
       });
       
@@ -118,23 +128,41 @@ function callOMDBAPI(movieName){
         // If the request is successful
         if (!error && response.statusCode === 200) {
 
+            var resultString="";
+
             // Parse the body of the site and recover just the imdbRating
             // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
             console.log("Title: ",JSON.parse(body).Title);
+            resultString= "Title: "+JSON.parse(body).Title+"\n";
+
             console.log("Year of Release: ",JSON.parse(body).Year);
+            resultString+= "Year of Release: "+JSON.parse(body).Year+"\n";
 
             for(var i = 0; i<JSON.parse(body).Ratings.length;i++){
-                if(JSON.parse(body).Ratings[i].Source === "Rotten Tomatoes")
+
+                if(JSON.parse(body).Ratings[i].Source === "Rotten Tomatoes"){
                     console.log("Rotten Tomatoes Rating: ",JSON.parse(body).Ratings[i].Value);
-                if(JSON.parse(body).Ratings[i].Source === "Internet Movie Database")
+                    resultString+= "Rotten Tomatoes Rating: "+JSON.parse(body).Ratings[i].Value+"\n";
+                }
+
+                if(JSON.parse(body).Ratings[i].Source === "Internet Movie Database"){
                     console.log("IMDB Rating: ",JSON.parse(body).Ratings[i].Value);
+                    resultString+= "IMDB Rating: "+JSON.parse(body).Ratings[i].Value+"\n";
+                }
             }
             console.log("Country: ",JSON.parse(body).Country)
+            resultString+= "Country: "+JSON.parse(body).Country+"\n";
+
             console.log("Language: ",JSON.parse(body).Language)
+            resultString+= "Language: "+JSON.parse(body).Language+"\n";
+
             console.log("Plot: ",JSON.parse(body).Plot)
+            resultString+= "Plot: "+JSON.parse(body).Plot+"\n";
+
             console.log("Actors: ",JSON.parse(body).Actors)
+            resultString+= "Actors: "+JSON.parse(body).Actors+"\n";
         }
-        log("movie-this",movieName);
+        log("movie-this",movieName,resultString);
         moreQuestions();
     });
     
@@ -146,13 +174,19 @@ function callBandsInTownAPI(artistName){
     request(queryURL, function(error,response,body){
         if (!error && response.statusCode === 200) {
 
+            var resultString="";
             for(var i =0;i<JSON.parse(body).length;i++){
             console.log("Venue: ",JSON.parse(body)[i].venue.name);
+            resultString+= "Venue: "+JSON.parse(body)[i].venue.name+"\n";
+
             console.log("Location: ",JSON.parse(body)[i].venue.city + ", "+JSON.parse(body)[i].venue.country);
+            resultString+= "Location: "+JSON.parse(body)[i].venue.city + ", "+JSON.parse(body)[i].venue.country+"\n";
+
             console.log("Date of concert: ", moment(JSON.parse(body)[i].datetime).format("MM/DD/YY"));
+            resultString+= "Date of concert: "+ moment(JSON.parse(body)[i].datetime).format("MM/DD/YY")+"\n";
         }
     }
-    log("concert-this",artistName);
+    log("concert-this",artistName,resultString);
     moreQuestions();
     });
     
