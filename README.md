@@ -82,12 +82,11 @@ The application will keep running as long as 'y' is pressed as the response to t
 
 ## Execution steps
 1. Download/Clone the respository.
-2. Navigate on terminal to the liri-node-app folder. Create a .env file inside the folder. Once created, open the file and include the following the .env file:
+2. Navigate on terminal to the liri-node-app folder. Create a .env file inside the folder. Once created, open the file and include the following the .env file (Replace your-spotify-id and your-spotify-secret with the spotify ID and spotify Secret received when signed up)
 ```
         SPOTIFY_ID=your-spotify-id
         SPOTIFY_SECRET=your-spotify-secret
 ```
-Replace your-spotify-id and your-spotify-secret with the spotify ID and spotify Secret received when signed up.
 3. Inside the folder liri-node-app on terminal, type "npm install". This will take all dependencies from package.json and install all the required packages to run the application.
 4. Once the packages are installed, in the same folder, type "node liri.js" on terminal. This will start application execution.
 
@@ -259,8 +258,8 @@ The above code snippet makes a request to Bands in Town API to get details of th
 7. Using dotenv package to keep the environment variables/IDs hidden.
 
 ## Author 
-[Ajita Srivastava Github](https://github.com/ajitas)
-[Ajita Srivastava Portfolio](https://ajitas.github.io/Portfolio/)
+* [Ajita Srivastava Github](https://github.com/ajitas)
+* [Ajita Srivastava Portfolio](https://ajitas.github.io/Portfolio/)
 
 ## License
 Standard MIT License
