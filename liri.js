@@ -1,3 +1,10 @@
+console.log("***********************************************************************")
+console.log("**                    *         *  *****     *                       **")
+console.log("**                    *         *  *   *     *                       **")
+console.log("**                    *         *  *****     *                       **")
+console.log("**                    *         *  *     *   *                       **")
+console.log("**                    *******   *  *      *  *                       **")
+console.log("***********************************************************************")
 //loads environment variables from .env file
 require("dotenv").config();
 //get the keys from keys.js

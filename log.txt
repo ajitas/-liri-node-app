@@ -1,0 +1,255 @@
+spotify-this-song,"Havana"
+Artist(s):
+1: Camila Cabello
+Song Name:Havana
+Preview Link:https://p.scdn.co/mp3-preview/663b794c2fc8da8f9bbe33698cb1bac567126a23?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Camila
+
+
+movie-this,"Cast away"
+Title: Cast Away
+Year of Release: 2000
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Russian
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citer
+
+
+concert-this,"Celine Dion"
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 10/30/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 10/31/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/02/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/03/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/06/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/07/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/09/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/10/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/13/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/14/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/16/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 11/17/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 12/28/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 12/29/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 12/31/18
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/02/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/04/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/05/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/08/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/11/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/15/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/16/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/19/19
+Venue: THE COLOSSEUM AT CAESARS PALACE
+Location: Las Vegas, United States
+Date of concert: 01/20/19
+
+
+movie-this,""Home Alone""
+Title: Home Alone
+Year of Release: 1990
+IMDB Rating: 7.5/10
+Rotten Tomatoes Rating: 62%
+Country: USA
+Language: English
+Plot: An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.
+Actors: Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard
+
+
+spotify-this-song,"Despacito"
+Artist(s):
+1: Luis Fonsi
+2: Daddy Yankee
+Song Name:Despacito - Remix
+Preview Link:null
+Album Name:Despacito Feat. Justin Bieber (Remix)
+
+
+spotify-this-song,"Havana"
+Artist(s):
+1: Camila Cabello
+Song Name:Havana
+Preview Link:https://p.scdn.co/mp3-preview/663b794c2fc8da8f9bbe33698cb1bac567126a23?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Camila
+
+
+movie-this,"Cast away"
+Title: Cast Away
+Year of Release: 2000
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Russian
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citer
+
+
+spotify-this-song,"africa"
+Artist(s):
+1: Toto
+Song Name:Africa
+Preview Link:https://p.scdn.co/mp3-preview/dd78dafe31bb98f230372c038a126b8808f9349b?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Toto IV
+
+
+movie-this,"cast away"
+Title: Cast Away
+Year of Release: 2000
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Russian
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citer
+
+
+spotify-this-song,"africa"
+Artist(s):
+1: Toto
+Song Name:Africa
+Preview Link:https://p.scdn.co/mp3-preview/dd78dafe31bb98f230372c038a126b8808f9349b?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Toto IV
+
+
+movie-this,"cast away"
+Title: Cast Away
+Year of Release: 2000
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Russian
+Plot: A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.
+Actors: Tom Hanks, Paul Sanchez, Lari White, Leonid Citer
+
+
+movie-this,""Home Alone""
+Title: Home Alone
+Year of Release: 1990
+IMDB Rating: 7.5/10
+Rotten Tomatoes Rating: 62%
+Country: USA
+Language: English
+Plot: An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.
+Actors: Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard
+
+
+spotify-this-song,"Havana"
+Artist(s):
+1: Camila Cabello
+Song Name:Havana
+Preview Link:https://p.scdn.co/mp3-preview/663b794c2fc8da8f9bbe33698cb1bac567126a23?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Camila
+
+
+spotify-this-song,"clear"
+Artist(s):
+1: Miky Woodz
+Song Name:Estamos Clear
+Preview Link:https://p.scdn.co/mp3-preview/c193f09362922ac4ddd76a40f55b95f8896525eb?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Estamos Clear
+
+
+spotify-this-song,"Havana"
+Artist(s):
+1: Camila Cabello
+Song Name:Havana
+Preview Link:https://p.scdn.co/mp3-preview/663b794c2fc8da8f9bbe33698cb1bac567126a23?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Camila
+
+
+movie-this,"Moana"
+Title: Moana
+Year of Release: 2016
+IMDB Rating: 7.6/10
+Rotten Tomatoes Rating: 96%
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+
+
+movie-this,""Home Alone""
+Title: Home Alone
+Year of Release: 1990
+IMDB Rating: 7.5/10
+Rotten Tomatoes Rating: 62%
+Country: USA
+Language: English
+Plot: An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.
+Actors: Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard
+
+
+spotify-this-song,"n"
+Artist(s):
+1: Quavo
+Song Name:W O R K I N M E
+Preview Link:null
+Album Name:W O R K I N M E
+
+
+spotify-this-song,"Havana"
+Artist(s):
+1: Camila Cabello
+Song Name:Havana
+Preview Link:https://p.scdn.co/mp3-preview/663b794c2fc8da8f9bbe33698cb1bac567126a23?cid=9e5c5ac62f584e588047982f53b93ccb
+Album Name:Camila
+
+
+movie-this,"Moana"
+Title: Moana
+Year of Release: 2016
+IMDB Rating: 7.6/10
+Rotten Tomatoes Rating: 96%
+Country: USA
+Language: English
+Plot: In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.
+Actors: Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison
+
+
