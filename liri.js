@@ -1,10 +1,16 @@
-console.log("***********************************************************************")
-console.log("**                    *         *  *****     *                       **")
-console.log("**                    *         *  *   *     *                       **")
-console.log("**                    *         *  *****     *                       **")
-console.log("**                    *         *  *     *   *                       **")
-console.log("**                    *******   *  *      *  *                       **")
-console.log("***********************************************************************")
+var CFonts = require("cfonts");
+console.log("****************************************")
+CFonts.say('LIRI', {
+    font: 'block',              // define the font face
+    align: 'left',              // define text alignment
+    colors: ['blue'],         // define all colors
+    background: 'transparent',  // define the background color, you can also use `backgroundColor` here as key
+    letterSpacing: 1,           // define letter spacing
+    lineHeight: 1,              // define the line height
+    space: true,                // define if the output text should have empty lines on top and on the bottom
+    maxLength: '0',             // define how many character can be on one line
+});
+console.log("****************************************")
 //loads environment variables from .env file
 require("dotenv").config();
 //get the keys from keys.js
@@ -105,6 +111,7 @@ function callSpotifyAPI(songName){
         }
         //Print the required information from data returned and also put the information in the resultString
         //resultString can be then logged into log.txt
+        console.log("======================================")
         console.log("Artist(s):")
         resultString= "Artist(s):\n";
 
@@ -124,7 +131,7 @@ function callSpotifyAPI(songName){
         //print album name
         console.log("Album Name:",data.tracks.items[0].album.name);
         resultString+= "Album Name:"+data.tracks.items[0].album.name+"\n";
-
+        console.log("======================================")
         //log it to log.txt
         log("spotify-this-song",songName,resultString);
         moreQuestions();
@@ -157,7 +164,7 @@ function callOMDBAPI(movieName){
             var resultString="";
 
             //print the required information from result
-
+            console.log("======================================")
             //Print movie title
             console.log("Title: ",JSON.parse(body).Title);
             resultString= "Title: "+JSON.parse(body).Title+"\n";
@@ -195,6 +202,7 @@ function callOMDBAPI(movieName){
             //print actors
             console.log("Actors: ",JSON.parse(body).Actors)
             resultString+= "Actors: "+JSON.parse(body).Actors+"\n";
+            console.log("======================================")
         }
         //log it to log.txt
         log("movie-this",movieName,resultString);
@@ -221,7 +229,7 @@ function callBandsInTownAPI(artistName){
             //get the required information from result and print it
 
             for(var i =0;i<JSON.parse(body).length;i++){
-
+            console.log("======================================")
             //print venue name
             console.log("Venue: ",JSON.parse(body)[i].venue.name);
             resultString+= "Venue: "+JSON.parse(body)[i].venue.name+"\n";
@@ -233,6 +241,7 @@ function callBandsInTownAPI(artistName){
             //print date
             console.log("Date of concert: ", moment(JSON.parse(body)[i].datetime).format("MM/DD/YY"));
             resultString+= "Date of concert: "+ moment(JSON.parse(body)[i].datetime).format("MM/DD/YY")+"\n";
+            console.log("======================================")
         }
     }
     //log the result in log.txt
