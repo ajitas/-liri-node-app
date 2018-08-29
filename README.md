@@ -74,6 +74,12 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI is a command l
     * fs is an internal node package used to let the user interact with the file system. In this application, we are reading from and writing onto different text files.
     * For more information : [fs](https://nodejs.org/api/fs.html)
 
+7. cfonts
+    * usage
+    ```require("cfonts")```
+    * This package lets us style the fonts on terminal. The title "LIRI" on terminal uses cfonts for a wondeful looking heading.
+    * For more information : [cfonts](https://www.npmjs.com/package/cfonts)
+
 ## Logging
 Each command and parameter along with the results printed for it on sceen is logged in log.txt
 
